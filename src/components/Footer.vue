@@ -60,15 +60,15 @@
     </div>
     <div class="bottom-footer">
       <div class="bottom-footer-container-80">
-        <button>SIGN UP NOW</button>
+        <button>SIGN UP NOW!</button>
         <div class="bottom-links">
           <ul>
-            <li>TEST</li>
-            <li>TEST</li>
-            <li>TEST</li>
-            <li>TEST</li>
-            <li>TEST</li>
-            <li>TEST</li>
+            <li class="follow">FOLLOW US</li>
+            <li><a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a></li>
+            <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
+            <li><a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a></li>
           </ul>
         </div>
       </div>

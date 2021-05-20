@@ -55,9 +55,26 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .bottom-links ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     ul li{
       display: inline-block;
       margin-left: 15px;
+      &.follow{
+        color: #0282F9;
+        font-weight: 700;
+      }
+    }
+    button{
+      padding:10px;
+      border-radius: 0;
+      border: 1px solid #0282F9;
+      background-color: transparent;
+      color: white;
+      cursor: pointer;
     }
   }
 }
