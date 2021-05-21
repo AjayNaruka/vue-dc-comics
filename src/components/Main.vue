@@ -12,6 +12,7 @@
         :type='card.series'
         />
       </div>
+      <button>LOAD MORE</button>
     </div>
   </main>
 </template>
@@ -38,4 +39,15 @@ export default {
 
 <style lang='scss' scoped>
 @import '../assets/css/main.scss';
+@import '../assets/css/variables.scss';
+button{
+  padding: 5px 15px;
+  border-radius: 0;
+  outline: 0;
+  border: none;
+  margin-bottom: 30px;
+  background-color: $lightbluecolor;
+  color: white;
+  font-weight: 500;
+}
 </style>

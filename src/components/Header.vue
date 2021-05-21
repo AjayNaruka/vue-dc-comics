@@ -1,4 +1,6 @@
 <template>
+<div class="header-template">
+  
   <header>
     <div class="header-80">
       <div class="header-left">
@@ -10,15 +12,20 @@
       <ul>
         <li 
         :class="(link.status)? 'active' : 'null'"
-        v-for="(link,index) in headerLinks" :key="index">
+        v-for="(link,index) in headerLinks" :key="index"
+        @click='activateLink(index)'
+        >
+        
           <a href="#">{{link.text.toUpperCase()}}</a>
         </li>
         
       </ul>
     </div>
     </div>
-    
   </header>
+  <div class="head-jumbotron"></div>
+</div>
+  
 </template>
 
 <script>
@@ -70,10 +77,25 @@ export default {
 
       ]
     }
+  },
+  methods:{
+    activateLink(index){
+      this.headerLinks.forEach(link=>{
+        link.status=false;
+      });
+      this.headerLinks[index].status=true;
+    }
   }
 }
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
 @import '../assets/css/headerStyle.scss';
+.header-template .head-jumbotron{
+  background: red;
+  widows: 100%;
+  height: 450px;
+  background-image: url('../assets/img/jumbotron.jpg');
+  background-size: cover;
+}
 </style>

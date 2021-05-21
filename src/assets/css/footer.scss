@@ -1,5 +1,5 @@
 footer{
-  height: 400px;
+  height: 450px;
   width: 100%;
   background-image: url("../assets/img/footer-bg.jpg");
 }
@@ -26,22 +26,26 @@ footer{
     }
     .top-footer-left{
       display: flex;
-      flex-wrap: nowrap;
       height: 100%;
       .col{
-        width: calc(100% / 3);
-        height: 100%;
-        color: black;
+        color: grey;
         padding: 20px 10px;
-        margin-right: 40px;
+        margin-right: 20px;
+        font-size: smaller;
         h2{
           color:white;
           margin-bottom: 10px;
         }
         .link-block{
           margin-bottom: 10px;
+          li{
+            cursor: pointer;
+            margin-bottom: 5px;
+            &:hover{
+              color: white;
+            }
+          }
         }
-        color: grey;
       }
     }
   }
